@@ -1,0 +1,14 @@
+.icons {
+    color: red;
+    display: flex;
+}
+.icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 25px;
+    &:last-child{
+        margin-right: 0;
+    }
+    color: #262626;
+    cursor: pointer;
+}
