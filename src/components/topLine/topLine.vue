@@ -11,5 +11,5 @@
   </div>
 </template>
 
-<style lang="scss" src="./topLine.scss">
+<style lang="scss" src="./topLine.scss" scoped>
 </style>

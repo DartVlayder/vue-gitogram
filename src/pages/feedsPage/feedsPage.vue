@@ -10,7 +10,15 @@
                 </div>
             </template>
             <template #content>
-                <h2>Content</h2>
+                <ul class="stories">
+                    <li class="stories-item" v-for="story in stories" :key="story.id">
+                        <storyUserItem
+                            :avatar="story.avatar"
+                            :username="story.username"
+                            @onPress="handlePress(story.id)"
+                        />
+                    </li>
+                </ul>
             </template>
         </topLine>
     </div>
@@ -19,12 +27,20 @@
 <script>
 import { topLine } from '../../components/topLine'
 import { iconMain } from '../../icons'
+import { storyUserItem } from '../../components/storyUserItem'
+import stories from './data.json'
 
 export default ({
   name: 'feedsPage',
   components: {
     topLine,
-    iconMain
+    iconMain,
+    storyUserItem
+  },
+  data () {
+    return {
+      stories
+    }
   }
 })
 </script>
