@@ -1,3 +1,7 @@
 export { default as homeHeader } from './homeHeader.vue'
 export { default as avatarOne } from './avatarOne.vue'
 export { default as exitHeader } from './exitHeader.vue'
+export { default as togglerReviews } from './togglerReviews.vue'
+export { default as forkFile } from './forkFile.vue'
+export { default as starProfile } from './starProfile.vue'
+export { default as avatarTwo } from './avatarTwo.vue'

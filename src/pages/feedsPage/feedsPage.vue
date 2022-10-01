@@ -22,12 +22,69 @@
             </template>
         </topLine>
     </div>
+    <div class="userProfile">
+        <userProfile>
+            <template #gitTitle>
+                <div class="gitTitle">
+                    <div class="subTitle">Vue.js</div>
+                    <div class="description">
+                        <span>JavaScript</span> framework for building interactive web applications ⚡
+                    </div>
+                    <div class="statistics-wrapper">
+                        <div class="statistics grey">
+                            <iconMain class="starImg" name="starProfile" />
+                            <div class="starName">Star</div>
+                        </div>
+                        <div class="statistics white">
+                            <div class="number__stars">156k</div>
+                        </div>
+                        <div class="statistics grey">
+                            <iconMain class="starImg" name="forkFile" />
+                            <div class="starName">Fork</div>
+                        </div>
+                        <div class="statistics white">
+                            <div class="number__stars">4</div>
+                        </div>
+                    </div>
+                </div>
+            </template>
+        </userProfile>
+    </div>
+    <div class="userProfile">
+        <userProfile>
+            <template #gitTitle>
+                <div class="gitTitle">
+                    <div class="subTitle">Vue.js</div>
+                    <div class="description">
+                        <span>JavaScript</span> framework for building interactive web applications ⚡
+                    </div>
+                    <div class="statistics-wrapper">
+                        <div class="statistics grey">
+                            <iconMain class="starImg" name="starProfile" />
+                            <div class="starName">Star</div>
+                        </div>
+                        <div class="statistics white">
+                            <div class="number__stars">156k</div>
+                        </div>
+                        <div class="statistics grey">
+                            <iconMain class="starImg" name="forkFile" />
+                            <div class="starName">Fork</div>
+                        </div>
+                        <div class="statistics white">
+                            <div class="number__stars">4</div>
+                        </div>
+                    </div>
+                </div>
+            </template>
+        </userProfile>
+    </div>
 </template>
 
 <script>
 import { topLine } from '../../components/topLine'
 import { iconMain } from '../../icons'
 import { storyUserItem } from '../../components/storyUserItem'
+import { userProfile } from '../../components/userProfile'
 import stories from './data.json'
 
 export default ({
@@ -35,7 +92,8 @@ export default ({
   components: {
     topLine,
     iconMain,
-    storyUserItem
+    storyUserItem,
+    userProfile
   },
   data () {
     return {
