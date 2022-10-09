@@ -1,17 +1,15 @@
 <template>
-    <div class="titleProfile">
-        <iconMain class="icon" name="avatarOne" />
+    <div class="x-container">
+      <div class="titleProfile">
+        <img class="profileComponent-img" v-bind="$attrs" />
         <div class="profileName">{{username}}</div>
+      </div>
     </div>
 </template>
 
 <script>
-import { iconMain } from '../../icons'
 
 export default {
-  components: {
-    iconMain
-  },
   props: {
     username: {
       type: String,

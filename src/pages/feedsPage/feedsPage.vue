@@ -12,7 +12,6 @@
             <template #content>
                 <ul class="stories">
                     <li class="stories-item" v-for="item in items" :key="item.id">
-                        <!-- :avatar="story.avatar" :username="story.username"  @onPress="handlePress(story.id)" -->
                         <storyUserItem
                             v-bind="getFeedData(item)"
                         />
@@ -22,17 +21,15 @@
         </topLine>
     </div>
     <div class="userProfile">
-        <userProfile>
-            <template #gitTitle></template>
-        </userProfile>
-    </div>
-    <div class="userProfile">
-        <userProfile>
-            <template #gitTitle>
-            </template>
-        </userProfile>
+              <ul class="userProfile__list">
+                <li class="userProfile__item" v-for="item in items" :key="item.id">
+                  <profileComponent v-bind="getFeedData(item)" />
+                  <userProfile v-bind="getFeedData(item)"/>
+                </li>
+              </ul>
     </div>
     <pre>{{items}}</pre>
+
 </template>
 
 <script>
@@ -40,7 +37,7 @@ import { topLine } from '../../components/topLine'
 import { iconMain } from '../../icons'
 import { storyUserItem } from '../../components/storyUserItem'
 import { userProfile } from '../../components/userProfile'
-/* import stories from './data.json' */
+import { profileComponent } from '../../components/profileComponent'
 
 import * as api from '../../api'
 
@@ -50,7 +47,8 @@ export default ({
     topLine,
     iconMain,
     storyUserItem,
-    userProfile
+    userProfile,
+    profileComponent
   },
   data () {
     return {
@@ -61,7 +59,12 @@ export default ({
     getFeedData (item) {
       return {
         username: item.name,
-        img: item.owner.avatar_url
+        src: item.owner.avatar_url,
+        full_name: item.full_name,
+        description: item.description,
+        star: item.stargazers_count,
+        forks: item.forks_count,
+        data: item.created_at
       }
     }
   },
