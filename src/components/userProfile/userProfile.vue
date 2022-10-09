@@ -1,10 +1,7 @@
 <template>
     <div class="c-userProfile">
         <div class="x-container">
-            <div class="titleProfile">
-                <iconMain class="icon" name="avatarOne" />
-                <div class="profileName">joshua_l</div>
-            </div>
+            <profileComponent username="joshua_l"></profileComponent>
             <div class="gitTitle">
                 <div class="subTitle">Vue.js</div>
                 <div class="description">
@@ -43,6 +40,7 @@
 </template>
 
 <script>
+import { profileComponent } from '../profileComponent'
 import { iconMain } from '../../icons'
 import { togglerReviews } from '../togglerReviews'
 import { commentProfile } from '../commentProfile'
@@ -51,7 +49,8 @@ export default {
   components: {
     iconMain,
     togglerReviews,
-    commentProfile
+    commentProfile,
+    profileComponent
   },
   data () {
     return {

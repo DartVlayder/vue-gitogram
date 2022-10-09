@@ -16,7 +16,12 @@
 .img {
     border-radius: 100%;
     padding: 4px;
+    width: 80px;
+    height: 80px;
 }
 .username {
     margin-top: 10px;
+}
+.bordered {
+    box-shadow: 0 0 5px purple;
 }

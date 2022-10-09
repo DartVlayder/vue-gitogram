@@ -1,0 +1,18 @@
+.c-button {
+    border-radius: 5px;
+    &:hover{
+        background: #9E9E9E;
+    }
+}
+.theme-green {
+    padding: 11px 109px;
+    background: #31AE54;
+}
+.btn-text {
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+}
+.hoverText {
+    background: #9E9E9E;
+}

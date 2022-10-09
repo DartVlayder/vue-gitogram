@@ -1,0 +1,30 @@
+.cardProfile {
+    max-width: 375px;
+    border-radius: 10px;
+    background: #fff;
+    height: 667px;
+}
+.progressIndicator {
+    padding: 8px;
+}
+.profileComponent {
+    margin-left: 12px;
+}
+.cardProfile-contentWrapper{
+    height: 500px;
+    font-weight: 400;
+}
+.cardProfile-content {
+    padding: 6px 15px;
+}
+.cardProfile-img {
+    margin: 0 auto;
+}
+.buttonComponent {
+    text-align: center;
+}
+@media (max-width: 375px) {
+    .theme-green {
+        padding: 11px 82px;
+    }
+}
