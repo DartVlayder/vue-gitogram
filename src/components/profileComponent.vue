@@ -1,7 +1,7 @@
 <template>
     <div class="x-container">
       <div class="titleProfile">
-        <img class="profileComponent-img" src="https://w7.pngwing.com/pngs/165/652/png-transparent-businessperson-computer-icons-avatar-avatar-heroes-public-relations-business.png" />
+        <img class="profileComponent-img" v-bind="$attrs" />
         <div class="profileName">{{username}}</div>
       </div>
     </div>

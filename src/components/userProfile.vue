@@ -2,7 +2,9 @@
     <div class="userProfile">
         <div class="container">
           <profile-component
-            username="John">
+            :username=username
+            v-bind="$attrs"
+          >
           </profile-component>
           <slot name="contentUser"/>
             <div class="Reviews">
@@ -10,13 +12,13 @@
                 <div class="comments" v-if="shown">
                     <ul class="comments-list">
                         <li class="comments-item" v-for="n in 5" :key="n" >
-                            <commentProfile text="Some text" username="John" />
+                            <commentProfile />
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="data">15 мая</div>
+        <div class="data">{{data}}</div>
     </div>
 </template>
 
@@ -69,6 +71,7 @@ export default {
   box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.2);
   background: rgb(202, 197, 197);
   padding: 16px 17px;
+  margin-bottom: 10px;
 }
 .Reviews {
   margin-bottom: 10px;

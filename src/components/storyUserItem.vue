@@ -1,7 +1,7 @@
 <template>
   <button class="story-user-item" @click="$emit(onPress)">
     <div class="avatar">
-        <img :src="avatar" class="img" alt="avatar">
+      <img v-bind="$attrs" class="img" alt="avatar">
     </div>
     <div class="username">{{ username }}</div>
   </button>
