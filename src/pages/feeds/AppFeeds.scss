@@ -1,0 +1,65 @@
+.headline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    margin-bottom: 40px;
+}
+.headline-right {
+  display: flex;
+  align-items: center;
+}
+.img-wrapper {
+  width: 30px;
+  border-radius: 100%;
+  background-color: #000;
+}
+.icon {
+  margin-right: 23px;
+  cursor: pointer;
+}
+.icon:hover {
+  color: #7cb96b;
+  transition: 0.3s;
+}
+.icon:last-child{
+  margin-right: 0;
+}
+.icon-exit {
+  width: 32px;
+}
+.stories{
+  display: flex;
+  justify-content: space-between;
+  &-item {
+    margin-right:20px;
+    padding: 5px;
+  }
+  &-item:last-child{
+    margin-right: 0;
+  }
+}
+.gitTitle {
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.subTitle {
+    font-weight: 700;
+    font-size: 26px;
+    width: 100%;
+    word-wrap: break-word;
+    margin-bottom: 10px;
+}
+.description {
+    margin-bottom: 10px;
+}
+.description span {
+    font-weight: bold;
+}
+.starImg {
+    width: 14px;
+    margin-right: 5px;
+}
